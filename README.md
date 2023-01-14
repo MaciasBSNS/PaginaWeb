@@ -1,7 +1,7 @@
 
-# sebastian-macias.com
+# Web Portfolio
 
-Project of the creation and design of web page for personal portfolio online
+Web portfolio creation project. Hosted at sebastian-macias.com
 
 
 ## Authors
