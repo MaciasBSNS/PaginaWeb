@@ -1,67 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index - Portfolio</title>
-    <link rel="stylesheet" href="./CSS/styles.css" /> <!– Link al archivo CSS –>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sebastián Macías - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles.css" /> <!– Link al archivo CSS –> 
 </head>
-<body>
+  <body>
 
-    <section class="landing">
+    <!-- Barra de navegación -->
 
-        <div class="background">
-            <img src="Imagenes/wallpaper_galaxy.jpg" alt="Wallpaper">
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-        <div class="card">
-            <img src="Imagenes/Electronics_mod.jpg" alt="Electronics wallpaper">
+        <div class="container-fluid">
 
-            <div id="Foto">
-                <img src="Imagenes/Foto.jfif" alt="Foto">
-            </div>
+          <a class="navbar-brand Nombre_Navbar" href="#">My portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div id="card_nombre">César Sebastián Macías Bejarano</div>
-            <div id="card_titulo_profesional">Electrical and Electronics Engineer</div>
-
-            <div class="separador"></div>
-
-            <ul class="certificates">
-                <li>Scrum Fundamentals Certified</li>
-                <li>Scrum Master Certified</li>
-                <li>Scrum Product Owner Certified</li>
-                <li>Intern auditor in Quality Assurance (ISO 9001:2015)</li>
-                <li>Microsoft Office Specialist: Excel Expert</li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                    <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work experience</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Formation
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Academic</a></li>
+                  <li><a class="dropdown-item" href="#">Certifications</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Complementary courses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="padding-right: 10px;">
+                <a class="nav-link" href="#">Publications</a>
+              </li>
+              <button type="button" class="btn btn-primary boton_CV">Download Resume</button>
             </ul>
-            
-            <div class="separador"></div>
-
-            <div></div>
-
-            <div></div>
-
-            <div></div>
-
-            <div class="iconosSociales">
-
-                <div class="icono1">
-                    <a href="https://www.linkedin.com/in/c%C3%A9sar-sebasti%C3%A1n-mac%C3%ADas-bejarano-6b57ba167/" class="social-icon" id="LinkedIn" target="_blank"> <!– Se utiliza "a" para hipervínculos –>
-                    <img id="LinkedIn" src="Imagenes/linkedin-logo.png" alt="LinkedIn">
-                    </a>
-                </div>
-
-                <div class="icono2">
-                    <a href="http://revistadigital.amca.mx/voulumen-1-cnca-2018/diseno-y-desarrollo-de-una-plataforma-experimental-para-evaluar-estrategias-de-control-en-procesos-termicos/" class="social-icon" id="AMCA" target="_blank"> <!– Se utiliza "a" para hipervínculos –>
-                    <img id="AMCA" src="Imagenes/book-icon.png" alt="Link AMCA">
-                    </a>
-                </div>
-
-            </div>
-
+          </div>
 
         </div>
 
-    </section>
+      </nav>
+
+    <!-- Contenido -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+<section id="Carrusel">
+    
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/42408/pexels-photo-42408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Work experience">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Work Experience</h5>
+              <p>Find out about the companies I have worked for, my positions, functions and some of the projects in which I have participated.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/336407/pexels-photo-336407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Studies">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Studies</h5>
+              <p>Find out about my academic trajectory, as well as my certifications and the complementary courses that I have taken.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Publications">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Projects</h5>
+              <p>A brief description of some projects I have worked on</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/891059/pexels-photo-891059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Publications">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Publications</h5>
+              <p>Here you will find the links to the publications I have made ...mainly academic content.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</section>
+
+<div>
+    CONTENIDO PRINCIPAL
+</div>
+
+    
+<div class="container-fluid text-center footer">
+    <div class="row align-items-start">
+        <div class="col-8">All Rights Reserved</div>
+        <div class="col-4">Iconos</div>
+    </div>
+</div>
+
 </body>
 </html>
